@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">FindUrPanditji</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <!--    <string name="menu_share">Share</string>-->
+    <!--    <string name="menu_share">Share</string>-->
+    <string name="menu_send">Send</string>
+
+    <!--    //custom string resources-->
+    <string name="menu_pandits">Pandits</string>
+    <string name="menu_pujas">Pujas</string>
+    <string name="menu_gods">Gods</string>
+    <string name="menu_contact_us">Contact us</string>
+    <string name="nav_header_login">Login</string>
+
+    <!--    //custom string tags added by the user-->
+    <string name="home_text1"> findurpanditji.com serve you for your exact and customized religious need with our well
+        experienced panditji and samagri at reasonable prices and hassle free service. Its a easy way to find and book
+        pandit online.We provide you pandit for puja at very reasional dakshina. Just contact us on our Mobile numbers
+        ,E-mail address for your queries and we will guide you about the exact nature of services available with us.
+        We specialize in conducting religious puja at your place of convenience. findurpanditji.com provides you to
+        book pandit online. We specialize in conducting religious pujas - Namakaran puja, Mundan puja, Birthday puja,
+        Janeu(Sacred Thread) puja, SatyaNarayan Puja, Griha Pravesh, Bhoomi Puja, Navagraha Shanti Puja, Vastu Shanti
+        Pooja, Rudra Abhishek, New Business, vivah puja, Narayan Nagbali Puja, Engagement puja, Laxmi Puja, Ganesha
+        puja and Durga Puja, Mata ki Chouki and Jaagran, Maha Mritunjya Jaap Puja, Yagna Havans, Kalsarpa Puja, Shradh Puja,
+        Last Right Rituals. Allpanditji provides you best online pandit booking services for puja. We provide pandit
+        for puja in Mumbai, Navi Mumbai, Delhi, Hyderabad, Bangalore, kolkata and all major cities of India. We provide
+        top pandit for puja. Book pandit for puja online now.
+        </string>
+
+    <string name="home_text2">We perform all kind of following pujas like Namakaran puja, Mundan puja, Birthday puja,
+        Janeu(Sacred Thread) puja, SatyaNarayan Puja, Griha Pravesh, Bhoomi Puja, Navagraha Shanti Puja, Vastu Shanti
+        Puja, Rudra Abhishek, New Business, vivah puja, Narayan Nagbali Puja, Engagement puja, Laxmi Puja, Ganesha
+        puja and Durga Puja, Mata ki Chouki and Jaagran, Maha Mritunjya Jaap Puja, Yagna Havans, Kalsarpa Puja, Shradh Puja,
+        Last Right Rituals
+         </string>
+
+    <string name="puja_text">Puja is an act of displaying veneration to god through invocations and numerous rituals. a very important
+                side of puja is to create a religious relationship with the spiritual being. pujas facilitate individuals
+                to usher in positivism, improve confidence and attract wealth and prosperity.
+                Pujas are performed for seeking divine grace and blessings of assorted gods and goddesses or to
+                attain specific objectives. Varied pujas are conducted for varied functions like for getting peace,
+                healthiness, gaining material abundance and religious prosperity. Pujas like shanti pujas and dosh
+                nivaran pujas also are very helpful to block negativity. Pujas are powerful and effective observe in
+                one’s religious journey on the way to enlightenment. pujas holds utmost significance and therefore
+                 additionally to general pujas, special online puja are performed throughout numerous occasions and
+                 events. Find Ur Panditji provides online puja booking services and also conducts pujas at devotees home.</string>
+
+    <string name="forgot_pswd">Don\'\'t have a account yet!! <u>Signup</u></string>
+    <string name="choose_file">choose file</string>
+    <string name="contact_details">  Reach us at: 151 West East highway CA,NY
+        <br> Email us at: kk9328843@gmail.com </br>
+        <br> Call us at: 9109600518 </br> </string>
+    <string name="bhoomi_puja_text">The month of shravan, kartik, margshirsh and paush of Hindu calendar are the most suitable time for the pujan of land. It is necessary to worship the land before construction work starts. Be careful while selecting the time for puja.Monday and Thursday proves to be the best day for puja. One should also avoid the adhik maas, the zero month, lunar month and sunset.The bhoomi pujan ceremony is conducted in strict conformance to vastu shastra. By performing this puja, one can appease the positive energies and natural elements surrounding the site.</string>
+
+<!--    for the gods pages of the gods description-->
+    <string name="activity_shiva_text">Shiva ( Sanskrit: शिव, Śiva, lit. the auspicious one) also known as Mahadeva ( the greatest god) is one of the
+        principal deities of Hinduism. He is the supreme being within Shaivism, one of the major traditions within contemporary
+        Hinduism. Shiva is known as "The Destroyer" within the Trimurti, the Hindu trinity that includes Brahma and Vishnu. In
+        Shaivism tradition, Shiva is the supreme being who creates, protects and transforms the universe. In the tradition of
+        Hinduism called Shaktism, the Goddess, or Devi, is described as supreme, yet Shiva is revered along with Vishnu and
+        Brahma. A goddess is stated to be the energy and creative power (Shakti) of each, with Parvati (Sati) the equal complementary
+        partner of Shiva. He is one of the five equivalent deities in Panchayatana puja of the Smarta tradition of Hinduism.</string>
+    <string name="activity_laxmi_text">Lakshmi (Sanskrit: लक्ष्मी, IAST: lakṣmī) or Laxmi, is the Hindu goddess of wealth, fortune and prosperity.She
+        is the wife and shakti (energy) of Vishnu, one of the principal deities of Hinduism and the Supreme Being in the Vaishnavism
+        Tradition.With Parvati and Saraswati, she forms Tridevi, the holy trinity. Lakshmi is also an important deity in Jainism and
+        found in Jain temples. Lakshmi has also been a goddess of abundance and fortune for Buddhists, and was represented on the
+        oldest surviving stupas and cave temples of Buddhism. In Buddhist sects of Tibet, Nepal and southeast Asia, goddess
+        Vasudhara mirrors the characteristics and attributes of the Hindu goddess Lakshmi with minor iconographic differences is also
+        called Sri or Thirumagal because she is endowed with six auspicious and divine qualities, or gunas, and is the divine strength
+        of Vishnu. In Hindu religion, she was born from the churning of the primordial ocean (Samudra manthan) and she chose Vishnu as
+        her eternal consort. When Vishnu descended on the Earth as the avatars Rama and Krishna, Lakshmi descended as his respective consort
+        as Sita and Rukmini. In the ancient scriptures of India, all women are declared to be embodiments of Lakshmi. The marriage and
+        relationship between Lakshmi and Vishnu as wife and husband is the paradigm for rituals and ceremonies for the bride and groom in Hindu weddings
+        . Lakshmi is considered another aspect of the same supreme goddess principle in the Shaktism tradition of Hinduism.</string>
+    <string name="activity_vishnu_text">Vishnu (Sanskrit pronunciation: [ʋɪʂɳʊ]; Sanskrit: विष्णु, IAST: Viṣṇu) is one of the principal
+        deities of Hinduism, and the Supreme Being or absolute truth in its Vaishnavism tradition Vishnu is the "preserver"
+        in the Hindu triad (Trimurti) that includes Brahma and Shiva. <br/>
+        In Vaishnavism, Vishnu is identical to the formless metaphysical concept called Brahman, the supreme, the Svayam
+        Bhagavan, who takes various avatars as "the preserver, protector" whenever the world is threatened with evil, chaos,
+        and destructive forces. His avatars most notably include Rama in the Ramayana and Krishna in the Mahabharata. He is
+        also known as Narayana, Jagannath, Vasudeva, Vithoba, and Hari. He is one of the five equivalent deities worshipped
+        in Panchayatana puja of the Smarta Tradition of Hinduism. In Hindu iconography, Vishnu is usually depicted as having
+        a pale or dark blue complexion and having four arms. He holds a padma (lotus flower) in his lower left hand,
+        Kaumodaki gada (mace) in his lower right hand, Panchajanya shankha (conch) in his upper left hand and the Sudarshana
+        Chakra (discus) in his upper right hand. A traditional depiction is Vishnu reclining on the coils of the serpent
+        Shesha, accompanied by his consort Lakshmi, as he "dreams the universe into reality".</string>
+    <string name="activity_durga_text">Durga (Sanskrit: दुर्गा, IAST: Durgā), identified as Adi Parashakti, is a principal and popular form of Hindu
+        Goddess. She is the warrior goddess, whose mythology centres around combating evils and demonic forces that threaten
+        peace, prosperity and dharma of the good. She is the fierce form of the protective mother goddess, willing to unleash
+        her anger against wrong, violence for liberation and destruction to empower creation. Durga is depicted in the Hindu
+        pantheon as a Goddess riding a lion or tiger, with many arms each carrying a weapon, often defeating Mahishasura
+        (lit. buffalo demon). The three principle forms of Durga worshiped are Maha Durga, Chandika and Aparajita. Of these,
+        Chandika has two forms called Chandi who is of the combined power and form of Saraswati, Lakshmi and Parvati and of
+        Chamunda who is a form of Kali created by the goddess for killing demons Chanda and Munda. Maha Durga has three forms:
+        Ugrachanda, Bhadrakali and Katyayani. Bhadrakali Durga is also worshiped in the form of her nine epithets called
+        Navadurga. She is a central deity in Shaktism tradition of Hinduism, where she is equated with the concept of
+        ultimate reality called Brahman. One of the most important texts of Shaktism is Devi Mahatmya, also known as Durgā
+        Saptashatī or Chandi patha, which celebrates Durga as the goddess, declaring her as the supreme being and the creator
+        of the universe. Estimated to have been composed between 400 and 600 CE, this text is considered by Shakta Hindus to
+        be as important a scripture as the Bhagavad Gita. She has a significant following all over India, Bangladesh and Nepal,
+        particularly in its eastern states such as West Bengal, Odisha, Jharkhand, Assam and Bihar. Durga is revered after spring
+        and autumn harvests, specially during the festival of Navratri.</string>
+    <string name="activity_ganesh_text">
+        Ganesha (Sanskrit: गणेश, IAST: Gaṇeśa)also known as Ganapati, Vinayaka or by numerous other names, is one of the best-known
+        and most worshipped deities in the Hindu pantheon. His image is found throughout India, Sri Lanka, Fiji, Thailand, Bali (Indonesia),
+        Bangladesh and Nepal. Hindu denominations worship him regardless of affiliations. Devotion to Ganesha is widely diffused and extends
+        to Jains and Buddhists.Although he is known by many attributes, Ganesha\'s elephant head makes him easy to identify. Ganesha is
+        widely revered as the remover of obstacles, the patron of arts and sciences and the deva of intellect and wisdom. As the god
+        of beginnings, he is honoured at the start of rites and ceremonies. Ganesha is also invoked as patron of letters and learning
+        during writing sessions. Several texts relate mythological anecdotes associated with his birth and exploits. Ganesha likely
+        emerged as a deity as early as the 2nd century CE, but most certainly by the 4th and 5th centuries CE, during the Gupta period,
+        although He inherited traits from Vedic and pre-Vedic precursors. Hindu mythology identifies him as the restored son of Parvati
+        and Shiva of the Shaivism tradition, but he is a pan-Hindu god found in its various traditions. In the Ganapatya tradition of
+        Hinduism, Ganesha is the supreme deity. The principal texts on Ganesha include the Ganesha Purana, the Mudgala Purana, and the
+        Ganapati Atharvashirsa. Brahma Purana and Brahmanda Purana are other two Puranic genre encyclopedic texts that deal with Ganesha.
+    </string>
+    <string name="activity_saraswati_text">Saraswati (सरस्वती, IAST: Sarasvatī) is the Hindu goddess of knowledge, music, art,
+        wisdom, and learning. She is a part of the trinity (Tridevi) of Saraswati, Lakshmi, and Parvati. All the three forms
+        help the trinity of Brahma, Vishnu, and Shiva to create, maintain, and regenerate-recycle the Universe, respectively.
+        The earliest known mention of Saraswati as a goddess is in the Rigveda. She has remained significant as a goddess from
+        the Vedic period through modern times of Hindu traditions. Some Hindus celebrate the festival of Vasant Panchami (the
+        fifth day of spring, and also known as Saraswati Puja and Saraswati Jayanti in so many parts of India) in her honour,
+        and mark the day by helping young children learn how to write the letters of the alphabet on that day. The Goddess is
+        also revered by believers of the Jain religion of west and central India, as well as some Buddhist sects. Saraswati,
+        is a Sanskrit fusion word of saras (सरस्) meaning "pooling water", but also sometimes translated as "speech"; and vati
+        (वती) meaning "she who possesses" (also found in the name of Parvati, "She who has wings"). Originally associated with
+        the river or rivers known as Saraswati, this combination therefore means "she who has ponds, lakes, and pooling water"
+        or occasionally "she who possesses speech". It is also a Sanskrit composite word of surasa-vati (सुरस-वति) which means
+        "one with plenty of water</string>
+</resources>

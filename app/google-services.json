@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "706607523274",
+    "firebase_url": "https://find-ur-panditji.firebaseio.com",
+    "project_id": "find-ur-panditji",
+    "storage_bucket": "find-ur-panditji.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706607523274:android:45e6c905f5982900531b33",
+        "android_client_info": {
+          "package_name": "com.project.findurpanditji"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706607523274-po6g0q1k8ecoem22fmv2sjd8l38u2eld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3ejFZunR6JKpCm3DXSHeujwefReLah1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706607523274-po6g0q1k8ecoem22fmv2sjd8l38u2eld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

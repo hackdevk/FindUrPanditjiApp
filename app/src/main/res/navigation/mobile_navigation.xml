@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.project.findurpanditji.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_pandits"
+        android:name="com.project.findurpanditji.ui.pandits.PanditFragment"
+        android:label="@string/menu_pandits"
+        tools:layout="@layout/fragment_pandits" />
+
+    <fragment
+        android:id="@+id/nav_pujas"
+        android:name="com.project.findurpanditji.ui.pujas.PujasFragment"
+        android:label="@string/menu_pujas"
+        tools:layout="@layout/fragment_pujas" />
+
+    <fragment
+        android:id="@+id/nav_gods"
+        android:name="com.project.findurpanditji.ui.gods.GodsFragment"
+        android:label="@string/menu_gods"
+        tools:layout="@layout/fragment_gods" />
+
+    <fragment
+        android:id="@+id/nav_contact_us"
+        android:name="com.project.findurpanditji.ui.contact_us.ContactFragment"
+        android:label="@string/menu_contact_us"
+        tools:layout="@layout/fragment_contact_us" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_send"-->
+<!--        android:name="com.project.findurpanditji.ui.send.SendFragment"-->
+<!--        android:label="@string/menu_send"-->
+<!--        tools:layout="@layout/fragment_send" />-->
+</navigation>

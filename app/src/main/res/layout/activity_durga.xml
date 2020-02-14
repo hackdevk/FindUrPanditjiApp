@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="?attr/colorPrimary"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" >-->
+<!--        -->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.gods.DurgaActivity"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_durga_label"
+            android:text="Durga"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="24sp"
+            android:layout_marginTop="23dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_durga_image"
+            app:layout_constraintTop_toBottomOf="@id/activity_durga_label"
+            app:layout_constraintLeft_toLeftOf="@id/activity_durga_label" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_durga_text"
+            app:layout_constraintTop_toBottomOf="@id/activity_durga_image"
+            app:layout_constraintLeft_toLeftOf="@id/activity_durga_image"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    </androidx.appcompat.widget.Toolbar>-->
+</ScrollView>

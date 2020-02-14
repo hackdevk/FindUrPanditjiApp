@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f57c00</color>
+    <color name="colorPrimaryDark">#ba4c00</color>
+    <color name="colorAccent">#ffac42</color>
+<!--    custom colors -->
+    <color name="profileBackgroundColor">#ffac42</color>
+    <color name="backgroundColor">#CEB7B4</color>
+    <color name="homeFont">#D8831B</color>
+</resources>

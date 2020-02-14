@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.gods.GaneshActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_ganesh_label"
+            android:text="Ganesh"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_ganesh_image"
+            app:layout_constraintTop_toBottomOf="@id/activity_ganesh_label"
+            app:layout_constraintLeft_toLeftOf="@id/activity_ganesh_label" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_ganesh_text"
+            app:layout_constraintTop_toBottomOf="@id/activity_ganesh_image"
+            app:layout_constraintLeft_toLeftOf="@id/activity_ganesh_image"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="100dp"
+        tools:context=".SignupActivity">
+
+        <TextView
+            android:id="@+id/activity_signup_tv_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Register here"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        for choosing whether the user is the pandit or jajman-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you a:"
+            android:layout_marginTop="15dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/activity_signup_tv_radio_label"
+            app:layout_constraintLeft_toLeftOf="@id/activity_signup_tv_label"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_label" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:id="@+id/activity_signup_rg_category"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_radio_label"
+            app:layout_constraintLeft_toLeftOf="@id/activity_signup_tv_radio_label" >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jajman Ji"
+                android:id="@+id/activity_signup_rb_jajman" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pandit Ji"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:id="@+id/activity_signup_rb_pandit" />
+        </RadioGroup>
+
+        <!--    for the name field-->
+        <TextView
+            android:id="@+id/activity_signup_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Enter your name:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/activity_signup_rg_category"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_rg_category" />
+
+        <EditText
+            android:id="@+id/activity_signup_et_name"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_name" />
+
+        <!--    for the usernmae field-->
+        <TextView
+            android:id="@+id/activity_signup_tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Username:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_et_name" />
+
+        <EditText
+            android:id="@+id/activity_signup_et_username"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_username"  />
+
+<!--        for the email field-->
+        <TextView
+            android:id="@+id/activity_signup_tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Email:"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_et_username" />
+
+        <EditText
+            android:id="@+id/activity_signup_et_email"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_email" />
+        <!--        for the password field-->
+        <TextView
+            android:id="@+id/activity_signup_tv_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Password:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_et_email" />
+
+        <EditText
+            android:id="@+id/activity_signup_et_password"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_password" />
+
+        <!--        for the confirm password field-->
+        <TextView
+            android:id="@+id/activity_signup_tv_cnfrm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Confirm Password:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_et_password" />
+
+        <EditText
+            android:id="@+id/activity_signup_et_cnfrm_password"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_cnfrm_password" />
+
+<!--        this part of codde will not be used in this activity and i will use it in the later activities-->
+
+        <!--        for the contact number field-->
+<!--        <TextView-->
+<!--            android:id="@+id/activity_signup_tv_contact_num"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:text="Contact no:"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/activity_signup_et_cnfrm_password" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/activity_signup_et_contact_num"-->
+<!--            android:layout_width="230dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_contact_num" />-->
+
+<!--        &lt;!&ndash;        for the years of experience field&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/activity_signup_tv_yo_experie"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:text="Years of experience:"-->
+<!--            android:inputType="number"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/activity_signup_et_contact_num" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/activity_signup_et_yo_experie"-->
+<!--            android:layout_width="230dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_yo_experie" />-->
+
+<!--        &lt;!&ndash;        for the uploading phototgraph field&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/activity_signup_tv_upload_pic"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:text="Upload your photograph:"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/activity_signup_et_yo_experie" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/activity_signup_btn_upload_pic"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/choose_file"-->
+<!--            android:onClick="uploadPic"-->
+<!--            android:minHeight="0dp"-->
+<!--            android:minWidth="0dp"-->
+<!--            android:textSize="10sp"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_upload_pic" />-->
+
+<!--        &lt;!&ndash;        for the address field&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/activity_signup_tv_address"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:text="Address:"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/activity_signup_btn_upload_pic" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/activity_signup_et_address"-->
+<!--            android:layout_width="230dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_address" />-->
+
+        <Button
+            android:id="@+id/activity_signup_btn_submit_form"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Register"
+            app:layout_constraintLeft_toLeftOf="@id/activity_signup_et_cnfrm_password"
+            app:layout_constraintRight_toRightOf="@id/activity_signup_et_cnfrm_password"
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_et_cnfrm_password" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
