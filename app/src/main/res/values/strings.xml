@@ -64,7 +64,7 @@
         <br> Call us at: 9109600518 </br> </string>
     <string name="bhoomi_puja_text">The month of shravan, kartik, margshirsh and paush of Hindu calendar are the most suitable time for the pujan of land. It is necessary to worship the land before construction work starts. Be careful while selecting the time for puja.Monday and Thursday proves to be the best day for puja. One should also avoid the adhik maas, the zero month, lunar month and sunset.The bhoomi pujan ceremony is conducted in strict conformance to vastu shastra. By performing this puja, one can appease the positive energies and natural elements surrounding the site.</string>
 
-<!--    for the gods pages of the gods description-->
+    <!--    for the gods pages of the gods description-->
     <string name="activity_shiva_text">Shiva ( Sanskrit: शिव, Śiva, lit. the auspicious one) also known as Mahadeva ( the greatest god) is one of the
         principal deities of Hinduism. He is the supreme being within Shaivism, one of the major traditions within contemporary
         Hinduism. Shiva is known as "The Destroyer" within the Trimurti, the Hindu trinity that includes Brahma and Vishnu. In
@@ -86,7 +86,7 @@
         . Lakshmi is considered another aspect of the same supreme goddess principle in the Shaktism tradition of Hinduism.</string>
     <string name="activity_vishnu_text">Vishnu (Sanskrit pronunciation: [ʋɪʂɳʊ]; Sanskrit: विष्णु, IAST: Viṣṇu) is one of the principal
         deities of Hinduism, and the Supreme Being or absolute truth in its Vaishnavism tradition Vishnu is the "preserver"
-        in the Hindu triad (Trimurti) that includes Brahma and Shiva. <br/>
+        in the Hindu triad (Trimurti) that includes Brahma and Shiva. <br />
         In Vaishnavism, Vishnu is identical to the formless metaphysical concept called Brahman, the supreme, the Svayam
         Bhagavan, who takes various avatars as "the preserver, protector" whenever the world is threatened with evil, chaos,
         and destructive forces. His avatars most notably include Rama in the Ramayana and Krishna in the Mahabharata. He is

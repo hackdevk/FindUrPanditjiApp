@@ -8,36 +8,34 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_logo_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-<!--        for our main activty or we can say the launcher activity-->
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- for our main activty or we can say the launcher activity -->
         <activity android:name=".MainActivity">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-        </activity>
-
-        <!-- the GOD activity files-->
-        <activity android:name=".ui.gods.LaxmiActivity"></activity>
-        <activity android:name=".ui.gods.ShivaActivity"></activity>
-        <activity android:name=".ui.gods.VishnuActivity"></activity>
-        <activity android:name=".ui.gods.GaneshActivity"></activity>
-        <activity android:name=".ui.gods.DurgaActivity"></activity>
-        <activity android:name=".ui.gods.SaraswatiActivity"></activity>
-
-        <!-- the PUJA activity files-->
-        <activity android:name=".ui.pujas.BhoomiPuja" />
-
-         <!-- for our sub package   'recycelr_view_example' -->
-        <activity android:name=".recycler_view_example.GodsActivity" />
-        <!--  for our login files-->
-        <activity android:name=".SignupActivity">
-
-        </activity>
-        <activity android:name=".LoginActivity" >
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- the GOD activity files -->
+        <activity android:name=".ui.gods.LaxmiActivity" />
+        <activity android:name=".ui.gods.ShivaActivity" />
+        <activity android:name=".ui.gods.VishnuActivity" />
+        <activity android:name=".ui.gods.GaneshActivity" />
+        <activity android:name=".ui.gods.DurgaActivity" />
+        <activity android:name=".ui.gods.SaraswatiActivity" /> <!-- the PUJA activity files -->
+        <activity android:name=".ui.pujas.BhoomiPuja" /> <!-- for our sub package   'recycelr_view_example' -->
+        <activity android:name=".recycler_view_example.GodsActivity" /> <!-- for our login files -->
+        <activity android:name=".SignupActivity"></activity>
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

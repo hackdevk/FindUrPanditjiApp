@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splashColor"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/activity_splash_img_logo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp" />
+
+    <TextView
+        android:id="@+id/activity_splash_tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_splash_img_logo"
+        android:layout_centerHorizontal="true"
+        android:text="Find Ur Panditji"
+        android:layout_marginTop="20dp"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/activity_splash_btn_login"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_splash_tv_app_name"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/splashButtonColor"
+        android:text="Login"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/activity_splash_btn_signup"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_splash_tv_app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/activity_splash_btn_login"
+        android:background="@color/splashButtonColor"
+        android:text="Signup"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

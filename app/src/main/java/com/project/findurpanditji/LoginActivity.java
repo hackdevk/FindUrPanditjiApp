@@ -72,6 +72,7 @@ public class LoginActivity extends AppCompatActivity {
         signupText.setMovementMethod(LinkMovementMethod.getInstance());
 
 
+        //temporary code for logging in
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,49 +81,49 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(loginIntent);
             }
         });
-        //setting the login btn for logging in
-        loginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //getting the vslues and storing them in strings
-                String email = emailField.getText().toString();
-                String password = passwordField.getText().toString();
-                //for getting the values of the radio buttons
-                String panditOption = panditRadio.getText().toString();
-                String jajmanOption = jajmanRadio.getText().toString();
-                //checking whether any field is empty or not
-                if(email.isEmpty()) {
-                    emailField.setError("Please enter your username");
-                    emailField.requestFocus();
-                } else if(password.isEmpty()) {
-                    passwordField.setError("Please enter your password");
-                    passwordField.requestFocus();
-                } else if(panditOption.isEmpty() || jajmanOption.isEmpty()) {
-                    panditRadio.setError("Please enter choose whether you are a pandit or jajman");
-                    panditRadio.requestFocus();
-                } else if(email.isEmpty() && password.isEmpty() ) {
-                    Toast.makeText(LoginActivity.this, "Fill out the fields in the form!!", Toast.LENGTH_SHORT).show();
-                } else if(!(email.isEmpty() && password.isEmpty() )) {
-                    //here we will write the logic of ours for storing the informstion which the user has providede
-                    mFirebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if(!task.isSuccessful()){
-                                Toast.makeText(LoginActivity.this, "Plesse login!!", Toast.LENGTH_SHORT).show();
-                            } else {
-                                Toast.makeText(LoginActivity.this, "Welcome User", Toast.LENGTH_SHORT).show();
-                                Intent loginIntent = new Intent(LoginActivity.this, MainActivity.class);
-                                startActivity(loginIntent);
-                            }
-                        }
-                    });
-
-                } else {
-                    //this is fo when any unexpected error comes
-                    Toast.makeText(LoginActivity.this, "Some Error Occurred!!", Toast.LENGTH_SHORT).show();
-                }
-
-            }
-        });
+//        //setting the login btn for logging in
+//        loginBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                //getting the vslues and storing them in strings
+//                String email = emailField.getText().toString();
+//                String password = passwordField.getText().toString();
+//                //for getting the values of the radio buttons
+//                String panditOption = panditRadio.getText().toString();
+//                String jajmanOption = jajmanRadio.getText().toString();
+//                //checking whether any field is empty or not
+//                if(email.isEmpty()) {
+//                    emailField.setError("Please enter your username");
+//                    emailField.requestFocus();
+//                } else if(password.isEmpty()) {
+//                    passwordField.setError("Please enter your password");
+//                    passwordField.requestFocus();
+//                } else if(panditOption.isEmpty() || jajmanOption.isEmpty()) {
+//                    panditRadio.setError("Please enter choose whether you are a pandit or jajman");
+//                    panditRadio.requestFocus();
+//                } else if(email.isEmpty() && password.isEmpty() ) {
+//                    Toast.makeText(LoginActivity.this, "Fill out the fields in the form!!", Toast.LENGTH_SHORT).show();
+//                } else if(!(email.isEmpty() && password.isEmpty() )) {
+//                    //here we will write the logic of ours for storing the informstion which the user has providede
+//                    mFirebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+//                        @Override
+//                        public void onComplete(@NonNull Task<AuthResult> task) {
+//                            if(!task.isSuccessful()){
+//                                Toast.makeText(LoginActivity.this, "Plesse login!!", Toast.LENGTH_SHORT).show();
+//                            } else {
+//                                Toast.makeText(LoginActivity.this, "Welcome User", Toast.LENGTH_SHORT).show();
+//                                Intent loginIntent = new Intent(LoginActivity.this, MainActivity.class);
+//                                startActivity(loginIntent);
+//                            }
+//                        }
+//                    });
+//
+//                } else {
+//                    //this is fo when any unexpected error comes
+//                    Toast.makeText(LoginActivity.this, "Some Error Occurred!!", Toast.LENGTH_SHORT).show();
+//                }
+//
+//            }
+//        });
     }
 }
