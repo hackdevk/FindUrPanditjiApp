@@ -5,8 +5,8 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bumptech.glide.Glide;
 import com.project.findurpanditji.R;
-import com.squareup.picasso.Picasso;
 
 public class LaxmiActivity extends AppCompatActivity {
     ImageView laxmiImageView;
@@ -16,7 +16,7 @@ public class LaxmiActivity extends AppCompatActivity {
         setContentView(R.layout.activity_laxmi);
         laxmiImageView = findViewById(R.id.activity_laxmi_image);
 //        String url = "https://5.imimg.com/data5/XU/PW/MY-52876856/lord-laxmi-statue-500x500.jpg";
-        Picasso.get()
+        Glide.with(getApplicationContext())
                 .load("https://5.imimg.com/data5/XU/PW/MY-52876856/lord-laxmi-statue-500x500.jpg")
                 .into(laxmiImageView);
 //                .setLoggingEnabled(true)

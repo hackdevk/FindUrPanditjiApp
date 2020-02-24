@@ -7,8 +7,8 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.bumptech.glide.Glide;
 import com.project.findurpanditji.R;
-import com.squareup.picasso.Picasso;
 
 public class DurgaActivity extends AppCompatActivity {
     ImageView durgaImageView;
@@ -33,9 +33,11 @@ public class DurgaActivity extends AppCompatActivity {
 
         durgaImageView = findViewById(R.id.activity_durga_image);
 //        String url = "https://i1.wp.com/www.allabouthinduism.info/wp-content/uploads/2013/03/vishnu2.jpg";
-        Picasso.get()
+
+        Glide.with(getApplicationContext())
                 .load( "https://www.astroved.com/images/pooja/DurgaPooja1400.jpg")
                 .into(durgaImageView);
+
 //                .setLoggingEnabled(true)
 //        Picasso.get().setLoggingEnabled(true);
 //        Picasso.Builder(this)

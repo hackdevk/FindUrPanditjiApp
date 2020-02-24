@@ -125,6 +125,7 @@ public class PanditFragment extends Fragment {
         panditList.add(pandit14);
         panditList.add(pandit15);
         panditList.add(pandit16);
+
         PanditsAdapter panditsAdapter = new PanditsAdapter(panditList,getContext(),panditViewClickListener);
         panditsRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         panditsRecyclerView.setAdapter(panditsAdapter);

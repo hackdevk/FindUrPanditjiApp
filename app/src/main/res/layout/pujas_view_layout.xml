@@ -18,6 +18,8 @@
             android:scaleType="fitXY"
             android:adjustViewBounds="true"
             android:layout_height="150dp"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
             android:layout_alignParentTop="true" />
 
         <TextView

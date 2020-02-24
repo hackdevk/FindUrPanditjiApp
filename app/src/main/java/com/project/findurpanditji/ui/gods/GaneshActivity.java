@@ -5,8 +5,9 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bumptech.glide.Glide;
 import com.project.findurpanditji.R;
-import com.squareup.picasso.Picasso;
+//import com.squareup.picasso.Picasso;
 
 public class GaneshActivity extends AppCompatActivity {
     ImageView ganeshImageView;
@@ -16,7 +17,7 @@ public class GaneshActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ganesh);
         ganeshImageView = findViewById(R.id.activity_ganesh_image);
 //        String url = "https://i1.wp.com/www.allabouthinduism.info/wp-content/uploads/2013/03/vishnu2.jpg";
-        Picasso.get()
+        Glide.with(getApplicationContext())
                 .load( "https://img.etimg.com/thumb/msid-70895648,width-643,imgsize-684476,resizemode-4/go-green-this-festive-season-and-bring-home-an-eco-friendly-ganesha-idol-.jpg")
                 .into(ganeshImageView);
 //                .setLoggingEnabled(true)

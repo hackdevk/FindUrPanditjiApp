@@ -7,6 +7,7 @@
     <color name="profileBackgroundColor">#ffac42</color>
     <color name="backgroundColor">#CEB7B4</color>
     <color name="homeFont">#D8831B</color>
+<!--    <color name="homeFontColor">#D8831B</color>-->
 <!--for the splash screen-->
     <color name="splashColor">#F0C9B6</color>
     <color name="splashButtonColor">#CA754C</color>

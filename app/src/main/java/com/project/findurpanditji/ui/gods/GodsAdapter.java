@@ -12,9 +12,10 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.project.findurpanditji.R;
 import com.project.findurpanditji.RecyclerViewClickListener;
-import com.squareup.picasso.Picasso;
+//import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -41,10 +42,12 @@ public class GodsAdapter extends RecyclerView.Adapter {
         final GodsViewHolder godsViewHolder = (GodsViewHolder) holder;
         godsViewHolder.godName.setText(godsArrayList.get(position).getGodName());
         //getting the dynamic image through the picasso
-        Picasso.get()
+        Glide.with(context)
                 .load(godsArrayList.get(position).getImageLink())
-                .resize(50,50)
                 .into(godsViewHolder.godImageView);
+
+//                .preload(50,50)(godsViewHolder.godImageView);
+
 //        Picasso.with(godsViewHolder.godImageView.getContext())
 //                .load(godsArrayList.get(position).getImageLink())
 //                .resize(50,50)

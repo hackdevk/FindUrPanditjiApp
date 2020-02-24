@@ -5,8 +5,9 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bumptech.glide.Glide;
 import com.project.findurpanditji.R;
-import com.squareup.picasso.Picasso;
+//import com.squareup.picasso.Picasso;
 
 public class SaraswatiActivity extends AppCompatActivity {
     ImageView saraswatiImageView;
@@ -16,7 +17,7 @@ public class SaraswatiActivity extends AppCompatActivity {
         setContentView(R.layout.activity_saraswati);
         saraswatiImageView = findViewById(R.id.activity_saraswati_image);
 //        String url = "https://i1.wp.com/www.allabouthinduism.info/wp-content/uploads/2013/03/vishnu2.jpg";
-        Picasso.get()
+        Glide.with(getApplicationContext())
                 .load( "https://www.rudraksha-ratna.com/uploads/files/6316857171.jpg")
                 .into(saraswatiImageView);
 //                .setLoggingEnabled(true)

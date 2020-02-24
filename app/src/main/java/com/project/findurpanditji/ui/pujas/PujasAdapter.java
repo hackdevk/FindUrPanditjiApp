@@ -11,10 +11,10 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.project.findurpanditji.R;
 import com.project.findurpanditji.RecyclerViewClickListener;
 import com.project.findurpanditji.ui.gods.GodsClass;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -50,9 +50,8 @@ public class PujasAdapter extends RecyclerView.Adapter {
         PujasViewHolder pujasViewHolder = (PujasViewHolder) holder;
         pujasViewHolder.pujaName.setText(pujasArrayList.get(position).getPujaName());
         //getting the static image
-        Picasso.get()
+        Glide.with(context)
                 .load(pujasArrayList.get(position).getImageLink())
-                .resize(50,50)
                 .into(pujasViewHolder.pujaImageView);
 //        Picasso.with(pujasViewHolder.pujaImageView.getContext())
 //                .load(pujasArrayList.get(position).getImageLink())

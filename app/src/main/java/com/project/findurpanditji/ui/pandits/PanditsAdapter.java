@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.project.findurpanditji.R;
 import com.project.findurpanditji.RecyclerViewClickListener;
 import com.project.findurpanditji.ui.gods.GodsClass;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
