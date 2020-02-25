@@ -37,12 +37,12 @@ public class GodsFragment extends Fragment {
 
 //        final TextView textView = root.findViewById(R.id.text_tools);
 
-        toolsViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                Log.e("tools", s);
-            }
-        });
+//        toolsViewModel.getText().observe(this, new Observer<String>() {
+//            @Override
+//            public void onChanged(@Nullable String s) {
+//                Log.e("tools", s);
+//            }
+//        });
 
         //my code
 //        generateList();
@@ -130,7 +130,7 @@ public class GodsFragment extends Fragment {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         godsList.setLayoutManager(linearLayoutManager);    //setting the layout manager
         godsList.setAdapter(godsAdapter);   //setting the adapter
-        Log.i("GODS",""+godsArrayList);
+        Log.i("GODS",""+godsArrayList.toString());
 
 
 //        godsName = {"Shiv ji","Laxmi ji","Vishnu ji","Durga ji","Ganesh ji"

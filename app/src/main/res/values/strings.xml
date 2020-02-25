@@ -46,6 +46,23 @@
         Last Right Rituals
          </string>
 
+
+
+
+
+    <string name="forgot_pswd">Don\'\'t have a account yet!! <u>Signup</u></string>
+    <string name="choose_file">choose file</string>
+    <string name="contact_details">  Reach us at: 151 West East highway CA,NY
+        <br> Email us at: kk9328843@gmail.com </br>
+        <br> Call us at: 9109600518 </br> </string>
+
+
+
+
+
+
+
+<!--    Puja descriptions -->
     <string name="puja_text">Puja is an act of displaying veneration to god through invocations and numerous rituals. a very important
                 side of puja is to create a religious relationship with the spiritual being. pujas facilitate individuals
                 to usher in positivism, improve confidence and attract wealth and prosperity.
@@ -57,12 +74,118 @@
                  additionally to general pujas, special online puja are performed throughout numerous occasions and
                  events. Find Ur Panditji provides online puja booking services and also conducts pujas at devotees home.</string>
 
-    <string name="forgot_pswd">Don\'\'t have a account yet!! <u>Signup</u></string>
-    <string name="choose_file">choose file</string>
-    <string name="contact_details">  Reach us at: 151 West East highway CA,NY
-        <br> Email us at: kk9328843@gmail.com </br>
-        <br> Call us at: 9109600518 </br> </string>
-    <string name="bhoomi_puja_text">The month of shravan, kartik, margshirsh and paush of Hindu calendar are the most suitable time for the pujan of land. It is necessary to worship the land before construction work starts. Be careful while selecting the time for puja.Monday and Thursday proves to be the best day for puja. One should also avoid the adhik maas, the zero month, lunar month and sunset.The bhoomi pujan ceremony is conducted in strict conformance to vastu shastra. By performing this puja, one can appease the positive energies and natural elements surrounding the site.</string>
+    <string name="bhoomi_puja_text">The month of shravan, kartik, margshirsh and paush of Hindu calendar are the most suitable time
+        for the pujan of land. It is necessary to worship the land before construction work starts. Be careful while selecting the
+        time for puja.Monday and Thursday proves to be the best day for puja. One should also avoid the adhik maas, the zero month,
+        lunar month and sunset.The bhoomi pujan ceremony is conducted in strict conformance to vastu shastra. By performing this puja,
+        one can appease the positive energies and natural elements surrounding the site.</string>
+
+    <string name="gauri_puja_text">Goddess Gauri is invited home and worshipped for three days. Married women pray to her for marital
+        bliss and the long life of their husbands. Unmarried girls worship her in order to get virtuous husbands. The Gauri puja begins
+        on the third day after Ganesh Chaturthi. This day is known as the avahana (arrival) as it is on this day that the Goddess is
+        brought into the home. Following our tradition, the married women in the house draw small footsteps of the Goddess using rangoli
+        (coloured) powder, following which Gauri\'s murti (idol) is brought home. </string>
+
+    <string name="annaprashan_puja_text">Annaprashan is a popular Hindu ritual which marks the beginning of solid food intake by newborn
+        babies. Following this ritual, the other weaning foods are introduced to newborn baby\’s diet . While the rituals of the ceremony
+        may differ according to the region, Annaprashan Celebrates baby\'s transition towards solids food. Annaprashan is conducted when
+        a newborn baby is ready to consume solids diet. Annaprashan Ceremony can be performed after six months and before the first birthday.
+        For boys, Annaprashan is performed during the even months, generally in the child\'s sixth, eighth or tenth month. Annaprashan is
+        performed during the odd months for girls, usually the child\'s seventh, ninth or eleventh month. Annaprashan is ceremony is mainly
+        conducted at home or at a temple.
+        /n The aim of Annaprashan Sanskar is showing the sense of purity and it is performed for healthy growth and strength of the body. It
+            teaches the importance of piousness of food. Scriptures say, if you eat pious food your mind will be pious. Food is not for the taste
+            but for health and growth of the body as well as the mind. Gods and Goddesses are first invoked and offered the food before feeding the child.
+    </string>
+    <string name="dhanteras_puja_text">The festival of Dhanteras is celebrated two days prior of Diwali festival. People celebrate this
+         festival with great enthusiasm, devotion and prosperity. This festival is celebrated in Maharashtra,
+          Northern India and in Gujarat. This festival is dedicated to Lord Dhanvantari who is the doctor of all
+           the Gods. The important ritual that is being performed on this day is the Lakshmi Puja done in the evening.
+        There are no particular rituals followed on this day as the manner in which this festival is celebrated
+        varies from region to region. On this day people purchase or do shopping of the gold or silver things.
+         This day is considered to be very favorable for all the new purchases or investments done. On this day
+          people lit the first lamps of the Diwali festival. Lanterns are being decorated and are sold in the market
+           to indicate the arrival of the Diwali festival.
+    </string>
+
+    <string name="mahamrityunjaya_puja_text">
+        Maha Mrityunjaya Mantra: || Om Tryambakam Yajamahe
+                            \n Sugandhim Pushtivardhanam || Urvarukamiva Bandhanan
+                            \n    Mrityor Mukshiya Maamritat
+        The great mantra dedicated to Shiva as Mrityunjaya is found in the Rig Veda. It is called the Maha Mrityunjaya mantra, the Great Death-Conquering
+        mantra. It is a mantra that has many names and forms. It is called the Rudra mantra, referring to the furious aspect of Shiva; the Tryambakam
+        mantra, alluding to Shiva\'s three eyes; and its is sometimes known as the Mrita-Sanjivini mantra because it is a component of the "life-restoring"
+        practice given to the primordial sage Shukra after he had completed an exhausting period of austerity. The Maha Mrityunjaya mantra is hailed by
+        the sages as the heart of the Veda. Along with the Gayatri mantra it holds the highest place among the many mantras used for contemplation and
+        meditation. Lord Shiva is referred to as tryambakam, the three-eyed one, because his third-eye has been "opened" by the powers of penance and
+        meditation. The third eye is said to be located in the space between the eyebrows, and is "opened" when one experiences spiritual awakening.
+        So, when we pray to Lord Shiva, we are in essence asking for his blessings and assistance in opening our third eye of spiritual knowledge.
+    </string>
+
+    <string name="rudrabhishek_puja_text">>Rudra Abhisheka is a ritual of worshipping Lord Shiva in the Rudra form. In this method, the Shiv linga is
+        washed by the water, which continuously keeps pouring on it through a vessel along with the continuous chanting of Vedic mantra called the Rudra
+        Sukhta. In all the Vedic scriptures the Rudra Abhishek puja is considered as the greatest spiritual puja. Abhisheka is a ritual in the, which you
+        worship of God with substances like milk (cow milk), Ghee, Curd, honey, coconut water, rice, water, sugarcane juice, powdered sugar and several more
+        similar items as advised by pandits. These spiritual items used in the puja are generally those items, which are liked by the Lord Shiva.
+    </string>
+
+    <string name="kaal_sarp_puja_text">Kalsarp Dosha Nivaran is formed when all the planets are situated between Rahu and Ketu. When all
+        the planets are hemmed between Rahu and Ketu i.e., the moon\'s north node and the moon\'s south node
+         Kal Sarp Yoga is formed. At times a few planets are outside the circumference or reach of rahu and ketu.
+         This yog brings negative thoughts in our mind and also creates fear in our mind. A yantra is made by man and
+          it has to be energized through mantras from the Vedas so that it helps the person connect with the higher power.
+          This process of energizing the yantra is undertaken by priests. The process of placing this energized yantra in homes
+           is also important and must be followed in a right manner. There are 12 Types of Kalsarp Pooja. </string>
+    <string name="navratri_puja_text">
+        Ghatasthapana is one of the significant rituals during Navratri. It marks the beginning of nine
+         days festivity. Our scriptures have well defined rules and guidelines to perform Ghatasthapana
+          during a certain period of time at the beginning of Navratri. Ghatasthapana is invocation of
+           Goddess Shakti and doing it wrong time, as our scriptures forewarn, might bring wrath of the
+            Goddess Shakti. Ghatasthapana is prohibited during Amavasya and night time. The most auspicious or Shubh
+             time to do Ghatasthapana is first one third of the day while Pratipada is prevailing. If due to some
+              reasons this time is not available then Ghatasthapana can be done during Abhijit Muhurta. It is advised
+               to avoid Nakshatra Chitra and Vaidhriti Yoga during Ghatasthapana but those are not prohibited. The most
+                important factor to consider is that Ghatasthapana is done before Hindu midday while Pratipada is prevailing.
+    </string>
+    <string name="durga_puja_text">Goddess Durga is the essence of women motherhood and power. Durga Puja is the day when all the
+         devotees worship the Goddess Durga with great devotion. Devotees worship her as power which
+          formed the universe. Goddess Durga plays a role of protector for their devotees and becomes
+          destructor. Durga puja celebrated all over the world. here, we will ensure you to know the complete
+           information about the Durga puja festival. During the duration of Durga Puja, devotees worshipped
+            the Goddess Durga as Nav Durga. The exact date and time of Durga Puja are decided according to the
+             Hindu calendar. During the ten auspicious days of Durga Puja celebrations, many different
+             rituals are performed. But in last five days of Durga Puja- Maha Saptami, Maha Shashthi, Vijay Dashmi and
+              Maha Navami are celebrated with great festivity, zeal and enthusiasm all over the world.Its a easy way
+               to find and book pandit online. Book pandit online through allpanditji.com is the most trustworthy way
+               to find panditji.
+    </string>
+    <string name="shiv_puja_text">You can do this Shiva Puja on Shivaratri and other occasions to please Lord Shiva and to destroy
+         your all sins. Shiva Puja is the worship of Lord Shiva – known as “The Destroyer” in Hinduism.
+          Lord Shiva always remains in samadhi or trance. He took incarnation as Shiva Linga on 14th day
+           of waning moon of Falgun month of Hindi Calendar.There are many traditional and ancient rites to
+            worship Lord Shiva with the use of abhisheka, mantra, tantra, kriyas, and mudras. The items and
+             the process of Shiva Puja also vary in various sects.
+    </string>
+    <string name="mata_ki_chowki_puja_text">Mata ki Chowki is a religious get together, through Chowkis. Mata Ki Chowki is short time kirtan
+         which can be performed at any time throughout the day, anytime of the year. In Mata Ki Chowki,
+          the group preaches about Mata, sings “Jagrata” and motivates devotees all over the world to pay
+           their respects through their prayers. This program, can be organised on the happy occasions such
+            as Weddings, Engagements, Birthdays, Anniversaries or during Ganpati and Navratri festivals.
+             Maa Durga is the embodiment of the divine energy and the creative power. Maa Durga reigns as
+              the Mother Goddess, amongst the Goddesses worshiped by Hindus. Although there are innumerable
+               forms of Goddesses and ultimately all are one, yet Durga-form is the most popular one. In Vedic
+                Mantras, the Mother is the Prime God.  There is enough devotional music, —which makes it easier
+                 for the people in attendance to dance and enjoy the entire night of Jagran and Mata Ki Chowki.
+                  Also, sometimes there are these artistes, dressed as different Gods, while dancing on the bhajans
+                   and keeping everyone in full bhakti mode. </string>
+
+
+
+
+
+
+
+
 
     <!--    for the gods pages of the gods description-->
     <string name="activity_shiva_text">Shiva ( Sanskrit: शिव, Śiva, lit. the auspicious one) also known as Mahadeva ( the greatest god) is one of the
@@ -139,4 +262,55 @@
         the river or rivers known as Saraswati, this combination therefore means "she who has ponds, lakes, and pooling water"
         or occasionally "she who possesses speech". It is also a Sanskrit composite word of surasa-vati (सुरस-वति) which means
         "one with plenty of water</string>
+
+<!--    custom created unordered lists-->
+    <string name="puja_samagri">Puja Samagri</string>
+    <string name="bhoomi_puja_samagri_list">
+                            \n<li>Ghee</li>
+                            \n<li>Lal-kapda(Red-cloth)</li>
+                            \n<li>Supari(Betel Nut)</li>
+                            \n<li>Haldi(Turmeric Powder)</li>
+                            \n<li>Kumkum</li>
+                            \n<li>Sindoor</li>
+                            \n<li>Abir</li>
+                            \n<li>Gulal</li>
+                            \n<li>Moli/Rakshasutra</li>
+                            \n<li>Sahad(Honey)</li>
+                            \n<li>Mishri(Suger Candy)</li>
+                            \n<li>Itra(perfume)</li>
+                            \n<li>Kapoor(Camphor)</li>
+                            \n<li>Laung(cloves)</li>
+                            \n<li>Eliyachi(cardamon)</li>
+                            \n<li>peeli sarso(Yellow Mustard Seeds)</li>
+                            \n<li>Janeu(Sacred Thread)</li>
+                            \n<li>Haldi Gath(Dry Turmeric)</li>
+                            \n<li>Khajur( Dry dates)</li>
+                            \n<li>Nariyals(Dry Coconut)</li>
+                            \n<li>Gulab Jal(Rose Water)</li>
+                            \n<li>Ganga Jal(Holy Water)</li>
+                            \n<li>Gaumutra(Cow Urine)</li>
+                            \n<li>Capus-Batti(Cotton Wick)</li>
+                            \n<li>Agarbati(Incense Stick)</li>
+                            \n<li>kapus Vastra</li>
+                            \n<li>Rice</li>
+                            \n<li>Dona Packet</li>
+                            \n<li>Match Stick/Machis</li>
+                            \n<li>Durva</li>
+                            \n<li>Aam Patta,Tulsi</li>
+                            \n<li>Belpata</li>
+                            \n<li>Phool/Mala</li>
+                            \n<li>Panpata</li>
+                            \n<li>Sweets</li>
+                            \n<li>1 Bowl of Panchmarit(Milk,Curd,Honey,Ghee and Sugar</li>
+                            \n<li>1 Kalash</li>
+                            \n<li>Pata/Chaurang</li>
+                            \n<li>5 fruits</li>
+                            \n<li>2 Thali</li>
+                            \n<li>2 Bowl</li>
+                            \n<li>2 Spoons</li>
+                            \n<li>Photo</li>
+                            \n<li>Aasan</li>
+                            \n<li>Deepak</li>
+    </string>
+
 </resources>

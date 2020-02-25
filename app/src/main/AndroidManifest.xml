@@ -31,8 +31,24 @@
         <activity android:name=".ui.gods.VishnuActivity" />
         <activity android:name=".ui.gods.GaneshActivity" />
         <activity android:name=".ui.gods.DurgaActivity" />
-        <activity android:name=".ui.gods.SaraswatiActivity" /> <!-- the PUJA activity files -->
-        <activity android:name=".ui.pujas.BhoomiPuja" /> <!-- for our sub package   'recycelr_view_example' -->
+        <activity android:name=".ui.gods.SaraswatiActivity" />
+
+        <!-- the PUJA activity files -->
+        <!-- for our sub package   'recycelr_view_example' -->
+        <activity android:name=".ui.pujas.BhoomiPuja" />
+        <activity android:name=".ui.pujas.AnnaprashanPuja" />
+        <activity android:name=".ui.pujas.DhanterasPuja" />
+        <activity android:name=".ui.pujas.DurgaPuja" />
+        <activity android:name=".ui.pujas.GauriPuja" />
+        <activity android:name=".ui.pujas.KaalSarpPuja" />
+        <activity android:name=".ui.pujas.MataKiChowkiPuja" />
+        <activity android:name=".ui.pujas.MahamrityunjayaPuja" />
+        <activity android:name=".ui.pujas.NavratriPuja" />
+        <activity android:name=".ui.pujas.RudrabhishekPuja" />
+        <activity android:name=".ui.pujas.ShivPuja" />
+
+
+
         <activity android:name=".recycler_view_example.GodsActivity" /> <!-- for our login files -->
         <activity android:name=".SignupActivity"></activity>
         <activity android:name=".LoginActivity">

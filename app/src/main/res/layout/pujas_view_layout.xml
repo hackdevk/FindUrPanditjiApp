@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardUseCompatPadding="true"
     android:layout_height="wrap_content"
+    android:layout_margin="7dp"
     android:orientation="vertical"
-    android:layout_margin="12dp">
+    app:cardUseCompatPadding="true">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,35 +15,35 @@
         <ImageView
             android:id="@+id/pujas_view_layout_image"
             android:layout_width="match_parent"
-            android:scaleType="fitXY"
-            android:adjustViewBounds="true"
             android:layout_height="150dp"
-            android:maxHeight="50dp"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
             android:maxWidth="50dp"
-            android:layout_alignParentTop="true" />
+            android:maxHeight="50dp"
+            android:scaleType="fitXY" />
 
         <TextView
             android:id="@+id/pujas_view_layout_puja_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/pujas_view_layout_image"
+            android:gravity="center"
             android:padding="5dp"
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:gravity="center" />
+            android:textStyle="bold" />
 
 
-<!--        <Button-->
-<!--            android:id="@+id/bookMovie"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/movieImage"-->
-<!--            android:layout_alignBottom="@+id/movieLanguage"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_alignParentRight="true"-->
-<!--            android:background="@color/colorPrimary"-->
-<!--            android:text="book"-->
-<!--            android:textColor="@color/colorWhite" />-->
+        <!--        <Button-->
+        <!--            android:id="@+id/bookMovie"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/movieImage"-->
+        <!--            android:layout_alignBottom="@+id/movieLanguage"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:background="@color/colorPrimary"-->
+        <!--            android:text="book"-->
+        <!--            android:textColor="@color/colorWhite" />-->
 
 
     </RelativeLayout>

@@ -12,5 +12,6 @@
     <color name="splashColor">#F0C9B6</color>
     <color name="splashButtonColor">#CA754C</color>
     <color name="blackColor">#000000</color>
+    <color name="pujaBgColor">#DDB170</color>
 
 </resources>

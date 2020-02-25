@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,13 +9,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        tools:context=".ui.pujas.BhoomiPuja">
+        tools:context=".ui.pujas.GauriPuja">
 
         <TextView
-            android:id="@+id/activity_bhoomi_puja_tv_heading"
+            android:id="@+id/activity_gauri_puja_tv_heading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bhoomi Puja"
+            android:text="Gauri Puja"
             android:textSize="24sp"
             android:textStyle="bold"
             android:typeface="serif"
@@ -23,40 +23,39 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/activity_bhoomi_puja_img_puja"
+            android:id="@+id/activity_gauri_puja_img_puja"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/activity_bhoomi_puja_tv_heading" />
+            app:layout_constraintTop_toBottomOf="@id/activity_gauri_puja_tv_heading" />
 
         <TextView
-            android:id="@+id/activity_bhoomi_puja_tv_content"
+            android:id="@+id/activity_gauri_puja_tv_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="23dp"
-            android:text="@string/bhoomi_puja_text"
-            app:layout_constraintLeft_toLeftOf="@id/activity_bhoomi_puja_img_puja"
-            app:layout_constraintTop_toBottomOf="@id/activity_bhoomi_puja_img_puja" />
+            android:text="@string/gauri_puja_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_gauri_puja_img_puja" />
 
         <TextView
-            android:id="@+id/activity_bhoomi_puja_tv_heading2"
+            android:id="@+id/activity_gauri_puja_tv_heading2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/puja_samagri"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/activity_bhoomi_puja_tv_content" />
+            app:layout_constraintTop_toBottomOf="@id/activity_gauri_puja_tv_content" />
 
         <TextView
-            android:id="@+id/activity_bhoomi_puja_tv_puja_samagri"
+            android:id="@+id/activity_gauri_puja_tv_puja_samagri"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/activity_bhoomi_puja_tv_heading2" />
-
+            app:layout_constraintTop_toBottomOf="@id/activity_gauri_puja_tv_heading2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
