@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<androidx.core.widget.NestedScrollView
     android:layout_width="match_parent"
-    android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
@@ -26,19 +27,19 @@
             android:layout_marginTop="12dp"
             android:text="@string/puja_text"
             android:textColor="@color/blackColor"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintRight_toRightOf="parent"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/pujas_recycler_view"
+        <TextView
+            android:id="@+id/pujas_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:paddingBottom="70dp"
-            android:background="@color/pujaBgColor"
+            android:text="Show the list of the pujas"
             app:layout_constraintTop_toBottomOf="@id/fragment_pujas_tv_description"
             app:layout_constraintRight_toRightOf="@id/fragment_pujas_tv_description"
             app:layout_constraintLeft_toLeftOf="@id/fragment_pujas_tv_description" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+</androidx.core.widget.NestedScrollView>

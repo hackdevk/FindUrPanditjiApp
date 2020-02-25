@@ -46,6 +46,8 @@
         <activity android:name=".ui.pujas.NavratriPuja" />
         <activity android:name=".ui.pujas.RudrabhishekPuja" />
         <activity android:name=".ui.pujas.ShivPuja" />
+        <activity android:name=".ui.pujas.PujasListActivity" />
+
 
 
 

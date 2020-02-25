@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    tools:context=".ui.pujas.PujasListActivity">
+
+        <!--    <TextView-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:id="@+id/puja_text"-->
+        <!--        android:text="@string/puja_text"-->
+        <!--        android:textSize="17sp"-->
+        <!--        -->
+        <!--        app:layout_constraintTop_toTopOf="parent"-->
+        <!--        app:layout_constraintRight_toRightOf="parent" />-->
+        <!--    -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/activity_pujas_list_layout_rv_pujas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:paddingBottom="70dp"
+            android:background="@color/pujaBgColor"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
