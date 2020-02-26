@@ -34,6 +34,11 @@
         android:name="com.project.findurpanditji.ui.contact_us.ContactFragment"
         android:label="@string/menu_contact_us"
         tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/nav_my_booking"
+        android:name="com.project.findurpanditji.ui.my_bookings.MyBookingsFragment"
+        android:label="@string/menu_bookings"
+        tools:layout="@layout/fragment_my_bookings" />
 
 <!--    <fragment-->
 <!--        android:id="@+id/nav_send"-->

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="100dp"
+    tools:context=".FillUserProfileActivity">
+
+<!--    for the uploading of image-->
+<!--    android:onClick="uploadProfile"-->
+    <ImageView
+        android:id="@+id/activity_fill_user_profile_iv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/profileBackgroundColor"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:src="@drawable/pandit_profile_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_fill_user_profile_tv_dob"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="D.O.B:"
+        android:textColor="@color/blackColor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_fill_user_profile_iv_profile" />
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <TextView
+        android:id="@+id/activity_fill_user_profile_tv_rb_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Are you a:"
+        android:textSize="14sp"
+        android:textColor="@color/blackColor"
+        app:layout_constraintLeft_toLeftOf="@id/activity_fill_user_profile_tv_dob"
+        app:layout_constraintTop_toBottomOf="@id/activity_fill_user_profile_tv_dob" />
+
+    <RadioGroup
+        android:id="@+id/activity_fill_user_profile_rg_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="@id/activity_fill_user_profile_tv_rb_label"
+        app:layout_constraintTop_toBottomOf="@id/activity_fill_user_profile_tv_rb_label">
+
+        <RadioButton
+            android:id="@+id/activity_fill_user_profile_rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/activity_fill_user_profile_rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:text="Female" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/activity_fill_user_profile_tv_contact_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Enter your contact no.:"
+        android:textColor="@color/blackColor"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/activity_fill_user_profile_rg_category"
+        app:layout_constraintTop_toBottomOf="@id/activity_fill_user_profile_rg_category" />
+
+    <EditText
+        android:id="@+id/activity_fill_user_profile_et_contact_no"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_fill_user_profile_tv_contact_label" />
+
+    <TextView
+        android:id="@+id/activity_fill_user_profile_tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Enter your address:"
+        android:textColor="@color/blackColor"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_fill_user_profile_et_contact_no" />
+
+    <EditText
+        android:id="@+id/activity_fill_user_profile_et_address"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_fill_user_profile_tv_address" />
+
+    <Button
+        android:id="@+id/activity_fill_user_profile_btn_submit"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_fill_user_profile_et_address" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

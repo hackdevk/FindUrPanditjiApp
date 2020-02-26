@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 R.id.nav_pujas, R.id.nav_contact_us)
                 .setDrawerLayout(drawer)
                 .build();
+
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
@@ -158,5 +159,10 @@ public class MainActivity extends AppCompatActivity {
     public void loginUserBtn(View view) {
         Intent loginIntent = new Intent(this,LoginActivity.class);
         startActivity(loginIntent); //going to the login screen
+    }
+
+    public void showUserProfile(View view) {
+        Intent skldslkd = new Intent(this,FillUserProfileActivity.class);
+        startActivity(skldslkd); //going to the login screen
     }
 }

@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,19 +13,13 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-
-import java.util.HashMap;
-import java.util.Map;
 
 import es.dmoral.toasty.Toasty;
 
@@ -72,6 +65,7 @@ public class SignupActivity extends AppCompatActivity {
         panditRadioBtn = findViewById(R.id.activity_signup_rb_pandit);
         jajmanRadioBtn = findViewById(R.id.activity_signup_rb_jajman);
 
+        //things which will happen on the press of the signup button
         signupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -135,7 +129,7 @@ public class SignupActivity extends AppCompatActivity {
 //                        if(task.isSuccessful()){
 //                                userID = mFirebaseAuth.getCurrentUser().getUid();
 //                                //making object and calling constructor of thre modal class for our signu class
-//                                final SignupModalClass signupUserValues = new SignupModalClass(name, username, password, confirmPassword, email, userOption, userID);
+//                                final UserValuesClass signupUserValues = new UserValuesClass(name, username, password, confirmPassword, email, userOption, userID);
 //
 //                            databaseUsers.child(userID).setValue(signupUserValues).addOnCompleteListener(new OnCompleteListener<Void>() {
 //                                @Override
@@ -206,7 +200,7 @@ public class SignupActivity extends AppCompatActivity {
 
     }
 
-    //methodf for registerign teh users
+    //methodf for register teh users
     private void registerUser(final String username, final String name, final String email, final String password, final String confirmPassword) {
         mFirebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(SignupActivity.this,
                 new OnCompleteListener<AuthResult>() {
@@ -217,7 +211,7 @@ public class SignupActivity extends AppCompatActivity {
                     FirebaseUser currentUser = mFirebaseAuth.getCurrentUser();
                     String userID = currentUser.getUid();
                     //making object and calling constructor of thre modal class for our signu class
-                    final SignupModalClass signupUserValues = new SignupModalClass(name, username, password, confirmPassword, email);
+                    final UserValuesClass signupUserValues = new UserValuesClass(name, username, password, confirmPassword, email);
 
                     databaseUsers.child(userID).setValue(signupUserValues).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override

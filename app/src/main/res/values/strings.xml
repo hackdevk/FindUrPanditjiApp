@@ -22,6 +22,7 @@
     <string name="menu_pujas">Pujas</string>
     <string name="menu_gods">Gods</string>
     <string name="menu_contact_us">Contact us</string>
+    <string name="menu_bookings">Bookings</string>
     <string name="nav_header_login">Login</string>
 
     <!--    //custom string tags added by the user-->
@@ -47,9 +48,6 @@
          </string>
 
 
-
-
-
     <string name="forgot_pswd">Don\'\'t have a account yet!! <u>Signup</u></string>
     <string name="choose_file">choose file</string>
     <string name="contact_details">  Reach us at: 151 West East highway CA,NY
@@ -57,12 +55,7 @@
         <br> Call us at: 9109600518 </br> </string>
 
 
-
-
-
-
-
-<!--    Puja descriptions -->
+    <!--    Puja descriptions -->
     <string name="puja_text">Puja is an act of displaying veneration to god through invocations and numerous rituals. a very important
                 side of puja is to create a religious relationship with the spiritual being. pujas facilitate individuals
                 to usher in positivism, improve confidence and attract wealth and prosperity.
@@ -180,13 +173,6 @@
                    and keeping everyone in full bhakti mode. </string>
 
 
-
-
-
-
-
-
-
     <!--    for the gods pages of the gods description-->
     <string name="activity_shiva_text">Shiva ( Sanskrit: शिव, Śiva, lit. the auspicious one) also known as Mahadeva ( the greatest god) is one of the
         principal deities of Hinduism. He is the supreme being within Shaivism, one of the major traditions within contemporary
@@ -263,7 +249,7 @@
         or occasionally "she who possesses speech". It is also a Sanskrit composite word of surasa-vati (सुरस-वति) which means
         "one with plenty of water</string>
 
-<!--    custom created unordered lists-->
+    <!--    custom created unordered lists-->
     <string name="puja_samagri">Puja Samagri</string>
     <string name="bhoomi_puja_samagri_list">
                             \n<li>Ghee</li>

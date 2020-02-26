@@ -1,6 +1,6 @@
 package com.project.findurpanditji;
 
-public class SignupModalClass {
+public class UserValuesClass {
     String name;
     String username ;
     String password;
@@ -9,7 +9,7 @@ public class SignupModalClass {
     String userOption;  //for checking whether the user is a pandit or a jajman
     String userID;
 
-    public SignupModalClass(String name, String username, String password, String confirmPassword, String email) {
+    public UserValuesClass(String name, String username, String password, String confirmPassword, String email) {
         this.name = name;
         this.username = username;
         this.password = password;
