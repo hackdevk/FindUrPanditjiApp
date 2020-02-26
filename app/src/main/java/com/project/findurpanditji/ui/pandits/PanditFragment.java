@@ -18,11 +18,14 @@ import com.project.findurpanditji.R;
 import com.project.findurpanditji.RecyclerViewClickListener;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class PanditFragment extends Fragment {
 
     private PanditViewModel galleryViewModel;
     RecyclerView panditsRecyclerView;
+    private List<PanditsClass> panditList;
+
     private RecyclerViewClickListener panditViewClickListener;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -38,76 +41,125 @@ public class PanditFragment extends Fragment {
 //            }
 //        });
 
-        panditsRecyclerView = view.findViewById(R.id.pandit_recycler_list);
-        showPanditList();
+        panditList = new ArrayList<>(); //making the array list
+        panditsRecyclerView = view.findViewById(R.id.pandit_recycler_list); //getting the recycler view
+        showPanditList(); //calling the method to add the items in the recycler view
         return view;
     }
 
-    private void showPanditList() {
-        ArrayList<PanditsClass> panditList = new ArrayList<>();
+    public void showPanditList() {
+
         PanditsClass pandit1 = new PanditsClass();
         pandit1.setPanditName("Pt Acharya Rajesh");
+        pandit1.setEmail("acharyaRajesh@gmail.com");
+        pandit1.setContact_no("+91 9009 444 403");
+        pandit1.setAddress("113 junior mig subhash");
         pandit1.setImageLink("  ");
 
         PanditsClass pandit2 = new PanditsClass();
-        pandit1.setPanditName("Pt Ashok Shastri");
-        pandit1.setImageLink("");
+        pandit2.setPanditName("Pt Ashok Shastri");
+        pandit2.setEmail("acharyaRajesh@gmail.com");
+        pandit2.setContact_no("+91 9009 444 403");
+        pandit2.setAddress("113 junior mig subhash");
+        pandit2.setImageLink("");
 
         PanditsClass pandit3 = new PanditsClass();
-        pandit1.setPanditName("Pt Sanjay Sharma");
-        pandit1.setImageLink("");
+        pandit3.setPanditName("Pt Sanjay Sharma");
+        pandit3.setEmail("acharyaRajesh@gmail.com");
+        pandit3.setContact_no("+91 9009 444 403");
+        pandit3.setAddress("113 junior mig subhash");
+        pandit3.setImageLink("");
 
         PanditsClass pandit4 = new PanditsClass();
-        pandit1.setPanditName("Pt Acharya Sri Guruji");
-        pandit1.setImageLink("");
+        pandit4.setPanditName("Pt Acharya Sri Guruji");
+        pandit4.setEmail("acharyaRajesh@gmail.com");
+        pandit4.setContact_no("+91 9009 444 403");
+        pandit4.setAddress("113 junior mig subhash");
+        pandit4.setImageLink("");
 
         PanditsClass pandit5 = new PanditsClass();
-        pandit1.setPanditName("Pt C I Panchal");
-        pandit1.setImageLink("");
+        pandit5.setPanditName("Pt C I Panchal");
+        pandit5.setEmail("acharyaRajesh@gmail.com");
+        pandit5.setContact_no("+91 9009 444 403");
+        pandit5.setAddress("113 junior mig subhash");
+        pandit5.setImageLink("");
 
         PanditsClass pandit6 = new PanditsClass();
-        pandit1.setPanditName("Pt Vinod Gautam");
-        pandit1.setImageLink("");
+        pandit6.setPanditName("Pt Vinod Gautam");
+        pandit6.setEmail("acharyaRajesh@gmail.com");
+        pandit6.setContact_no("+91 9009 444 403");
+        pandit6.setAddress("113 junior mig subhash");
+        pandit6.setImageLink("");
 
         PanditsClass pandit7 = new PanditsClass();
-        pandit1.setPanditName("Pt Vaidhik");
-        pandit1.setImageLink("");
+        pandit7.setPanditName("Pt Vaidhik");
+        pandit7.setEmail("acharyaRajesh@gmail.com");
+        pandit7.setContact_no("+91 9009 444 403");
+        pandit7.setAddress("113 junior mig subhash");
+        pandit7.setImageLink("");
 
         PanditsClass pandit8 = new PanditsClass();
-        pandit1.setPanditName("Pt Rajesh Dubey");
-        pandit1.setImageLink("");
+        pandit8.setPanditName("Pt Rajesh Dubey");
+        pandit8.setEmail("acharyaRajesh@gmail.com");
+        pandit8.setContact_no("+91 9009 444 403");
+        pandit8.setAddress("113 junior mig subhash");
+        pandit8.setImageLink("");
 
         PanditsClass pandit9 = new PanditsClass();
-        pandit1.setPanditName("Pt Narendra Shrivastava");
-        pandit1.setImageLink("");
+        pandit9.setPanditName("Pt Narendra Shrivastava");
+        pandit9.setEmail("acharyaRajesh@gmail.com");
+        pandit9.setContact_no("+91 9009 444 403");
+        pandit9.setAddress("113 junior mig subhash");
+        pandit9.setImageLink("");
 
         PanditsClass pandit10 = new PanditsClass();
-        pandit1.setPanditName("Pt Acharya Sri Guruji");
-        pandit1.setImageLink("");
+        pandit10.setPanditName("Pt Acharya Sri Guruji");
+        pandit10.setEmail("acharyaRajesh@gmail.com");
+        pandit10.setContact_no("+91 9009 444 403");
+        pandit10.setAddress("113 junior mig subhash");
+        pandit10.setImageLink("");
 
         PanditsClass pandit11 = new PanditsClass();
-        pandit1.setPanditName("Pt Acharya Panchal Jyotish");
-        pandit1.setImageLink("");
+        pandit11.setPanditName("Pt Acharya Panchal Jyotish");
+        pandit11.setEmail("acharyaRajesh@gmail.com");
+        pandit11.setContact_no("+91 9009 444 403");
+        pandit11.setAddress("113 junior mig subhash");
+        pandit11.setImageLink("");
 
         PanditsClass pandit12 = new PanditsClass();
-        pandit1.setPanditName("Pt Swarn Sagar");
-        pandit1.setImageLink("");
+        pandit12.setPanditName("Pt Swarn Sagar");
+        pandit12.setEmail("acharyaRajesh@gmail.com");
+        pandit12.setContact_no("+91 9009 444 403");
+        pandit12.setAddress("113 junior mig subhash");
+        pandit12.setImageLink("");
 
         PanditsClass pandit13 = new PanditsClass();
-        pandit1.setPanditName("Pt  Satakshi Jyotishudh Sanstha");
-        pandit1.setImageLink("");
+        pandit13.setPanditName("Pt  Satakshi Jyotishudh Sanstha");
+        pandit13.setEmail("acharyaRajesh@gmail.com");
+        pandit13.setContact_no("+91 9009 444 403");
+        pandit13.setAddress("113 junior mig subhash");
+        pandit13.setImageLink("");
 
         PanditsClass pandit14 = new PanditsClass();
-        pandit1.setPanditName("Pt Acharya P Laxminarayan");
-        pandit1.setImageLink("");
+        pandit14.setPanditName("Pt Acharya P Laxminarayan");
+        pandit14.setEmail("acharyaRajesh@gmail.com");
+        pandit14.setContact_no("+91 9009 444 403");
+        pandit14.setAddress("113 junior mig subhash");
+        pandit14.setImageLink("");
 
         PanditsClass pandit15 = new PanditsClass();
-        pandit1.setPanditName("Pt Mishra Pujapath");
-        pandit1.setImageLink("");
+        pandit15.setPanditName("Pt Mishra Pujapath");
+        pandit15.setEmail("acharyaRajesh@gmail.com");
+        pandit15.setContact_no("+91 9009 444 403");
+        pandit15.setAddress("113 junior mig subhash");
+        pandit15.setImageLink("");
 
         PanditsClass pandit16 = new PanditsClass();
-        pandit1.setPanditName("Pt Sundar Lala Shastri");
-        pandit1.setImageLink("");
+        pandit16.setPanditName("Pt Sundar Lala Shastri");
+        pandit16.setEmail("acharyaRajesh@gmail.com");
+        pandit16.setContact_no("+91 9009 444 403");
+        pandit16.setAddress("113 junior mig subhash");
+        pandit16.setImageLink("");
 
         panditList.add(pandit1);
         panditList.add(pandit2);

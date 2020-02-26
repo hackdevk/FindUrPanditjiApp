@@ -1,10 +1,14 @@
 package com.project.findurpanditji.ui.pandits;
 
 import android.content.Context;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,13 +20,14 @@ import com.project.findurpanditji.RecyclerViewClickListener;
 import com.project.findurpanditji.ui.gods.GodsClass;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class PanditsAdapter extends RecyclerView.Adapter {
-    public ArrayList<PanditsClass> panditsArrayList;
+    public List<PanditsClass> panditsArrayList;
     private RecyclerViewClickListener panditViewClickListener;
     Context context;
 
-    public PanditsAdapter(ArrayList<PanditsClass> panditsArrayList, Context context, RecyclerViewClickListener panditViewClickListener) {
+    public PanditsAdapter(List<PanditsClass> panditsArrayList, Context context, RecyclerViewClickListener panditViewClickListener) {
         this.panditsArrayList = panditsArrayList;
         this.context = context;
         this.panditViewClickListener = panditViewClickListener;
@@ -47,14 +52,48 @@ public class PanditsAdapter extends RecyclerView.Adapter {
 
 
         //setting the click event for the images
-//        panditsViewHolder.panditImageView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
+        panditsViewHolder.panditImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showPopup(panditsViewHolder,position);
 //                panditViewClickListener.recyclerViewListClicked(panditsViewHolder.panditImageView,position);
-//            }
-//        });
+            }
+        });
     }
 
+    private void showPopup(PanditsViewHolder panditsViewHolder,int position) {
+        View popupView = LayoutInflater.from(context).inflate(R.layout.pandits_popup_window_layout,null);
+        final PopupWindow popupWindow = new PopupWindow(popupView, WindowManager.LayoutParams.WRAP_CONTENT,WindowManager.LayoutParams.WRAP_CONTENT);
+        ImageView closeImage = popupView.findViewById(R.id.pandits_popup_window_layout_iv_close);
+        ImageView profileImage = popupView.findViewById(R.id.pandits_popup_window_layout_iv_pandit);
+        TextView panditName = popupView.findViewById(R.id.pandits_popup_window_layout_tv_name);
+        TextView panditEmail = popupView.findViewById(R.id.pandits_popup_window_layout_tv_email);
+        TextView panditAddress = popupView.findViewById(R.id.pandits_popup_window_layout_tv_address);
+        TextView panditContactNo = popupView.findViewById(R.id.pandits_popup_window_layout_tv_contact_no);
+        Button btnBook = popupView.findViewById(R.id.pandits_popup_window_layout_btn_book);  //for the booking button
+
+        //setting the values for the fields
+        panditName.setText(panditsArrayList.get(position).getPanditName());
+        panditEmail.setText(panditsArrayList.get(position).getEmail());
+        panditAddress.setText(panditsArrayList.get(position).getAddress());
+        panditContactNo.setText(panditsArrayList.get(position).getContact_no());
+
+        closeImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                popupWindow.dismiss();
+            }
+        });
+        btnBook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                popupWindow.dismiss();
+                Toast.makeText(context, "Pandit booked", Toast.LENGTH_SHORT).show();
+            }
+        });
+//        popupWindow.showAsDropDown(popupView,200,250);
+        popupWindow.showAtLocation(popupView, Gravity.CENTER,0,0);
+    }
 
 
     @Override
@@ -75,6 +114,7 @@ public class PanditsAdapter extends RecyclerView.Adapter {
                 public void onClick(View v) {
                     //printing  a toast
                     Toast.makeText(panditImageView.getContext(), panditsArrayList.get(getAdapterPosition()).getPanditName()+"image is clicked!!", Toast.LENGTH_SHORT).show();
+
                 }
             });
         }

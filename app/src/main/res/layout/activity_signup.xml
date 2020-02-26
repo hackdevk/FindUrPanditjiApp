@@ -247,6 +247,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="Register"
+            android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="@id/activity_signup_et_cnfrm_password"
             app:layout_constraintRight_toRightOf="@id/activity_signup_et_cnfrm_password"
             app:layout_constraintTop_toBottomOf="@id/activity_signup_et_cnfrm_password" />

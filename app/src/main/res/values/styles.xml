@@ -6,12 +6,22 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="buttonStyle">@style/OrangeButton</item>
     </style>
 
+<!--    custom colr for button-->
+    <style name="OrangeButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+    </style>
 <!--    for not showing the actionn bar i.e only the full screen-->
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">false</item>
+        <item name="buttonStyle">@style/OrangeButton</item>
     </style>
     <style name="AppTheme.">
         <item name="windowActionBar">false</item>

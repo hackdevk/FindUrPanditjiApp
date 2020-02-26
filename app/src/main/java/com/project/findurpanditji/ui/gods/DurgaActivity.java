@@ -30,6 +30,15 @@ public class DurgaActivity extends AppCompatActivity {
 //            }
 //        });
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         durgaImageView = findViewById(R.id.activity_durga_image);
 //        String url = "https://i1.wp.com/www.allabouthinduism.info/wp-content/uploads/2013/03/vishnu2.jpg";

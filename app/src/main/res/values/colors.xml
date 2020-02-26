@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#F0C9B6</color>
-    <color name="colorPrimaryDark">#F0C9B6</color>
-    <color name="colorAccent">#ffac42</color>
+    <color name="colorPrimary">#FFAB40</color>
+    <color name="colorPrimaryDark">#FFAC40</color>
+<!--    <color name="colorAccent">#ffac42</color>-->
+    <color name="colorAccent">#ffdd71</color>
 <!--    custom colors -->
     <color name="profileBackgroundColor">#ffac42</color>
-    <color name="backgroundColor">#CEB7B4</color>
+    <color name="backgroundColor">#ffe0b2</color>
     <color name="homeFont">#D8831B</color>
 <!--    <color name="homeFontColor">#D8831B</color>-->
 <!--for the splash screen-->
@@ -13,5 +14,17 @@
     <color name="splashButtonColor">#CA754C</color>
     <color name="blackColor">#000000</color>
     <color name="pujaBgColor">#DDB170</color>
+    <color name="popupBGColor">#FFCC80</color>
+    <color name="popupTextColor">#D8A432</color>
+
+    <color name="panditBgColor">#FFD180</color>
+<!--    colors for the button-->
+    <color name="buttonCenter">#fb8c00</color>
+    <color name="buttonEnd">#ff9100</color>
+    <color name="buttonStart">#ffc246</color>
+
+    <color name="whiteColor">#FDFDFD</color>
+
+
 
 </resources>
