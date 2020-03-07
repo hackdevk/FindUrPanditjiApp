@@ -9,6 +9,7 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,12 +25,13 @@ import com.google.firebase.auth.FirebaseUser;
 import com.project.findurpanditji.ui.gods.GodsFragment;
 import com.project.findurpanditji.ui.home.HomeFragment;
 
+import es.dmoral.toasty.Toasty;
+
 public class LoginActivity extends AppCompatActivity {
     EditText emailField ;
     EditText passwordField;
     TextView signupText;
     Button loginBtn;
-    RadioButton panditRadio, jajmanRadio;
     FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
     @Override
@@ -38,12 +40,14 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
+
+        //getting the fields through their ids
         emailField = findViewById(R.id.activity_login_et_email);
         passwordField = findViewById(R.id.activity_login_et_password);
         loginBtn = findViewById(R.id.activity_login_btn_loginBtn);
         signupText = findViewById(R.id.activity_login_tv_signup_link);
-        panditRadio = findViewById(R.id.activity_login_rb_pandit);
-        jajmanRadio = findViewById(R.id.activity_login_rb_jajman);
+//        panditRadio = findViewById(R.id.activity_login_rb_pandit);
+//        jajmanRadio = findViewById(R.id.activity_login_rb_jajman);
 
         mAuthStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -73,25 +77,33 @@ public class LoginActivity extends AppCompatActivity {
 
 
         //temporary code for logging in
-        loginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(LoginActivity.this, "User logged in", Toast.LENGTH_SHORT).show();
-                Intent loginIntent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(loginIntent);
-            }
-        });
-//        //setting the login btn for logging in
 //        loginBtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//                //getting the vslues and storing them in strings
-//                String email = emailField.getText().toString();
-//                String password = passwordField.getText().toString();
-//                //for getting the values of the radio buttons
-//                String panditOption = panditRadio.getText().toString();
-//                String jajmanOption = jajmanRadio.getText().toString();
-//                //checking whether any field is empty or not
+//                Toast.makeText(LoginActivity.this, "User logged in", Toast.LENGTH_SHORT).show();
+//                Intent loginIntent = new Intent(LoginActivity.this, MainActivity.class);
+//                startActivity(loginIntent);
+//            }
+//        });
+
+//        //setting the login btn for logging in
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //getting the vslues and storing them in strings
+                String loginEmail = emailField.getText().toString().trim();
+                String loginPassword = passwordField.getText().toString().trim();
+                //checking whether any field is empty or not
+                if (!loginEmail.equalsIgnoreCase("")) {
+                    if (!loginPassword.equalsIgnoreCase("")) {
+                        loginUser(loginEmail, loginPassword);
+                    } else {
+                        Toasty.error(LoginActivity.this, "Please Enter Password", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toasty.error(LoginActivity.this, "Please Enter Email", Toast.LENGTH_SHORT).show();
+                }
+
 //                if(email.isEmpty()) {
 //                    emailField.setError("Please enter your username");
 //                    emailField.requestFocus();
@@ -105,25 +117,27 @@ public class LoginActivity extends AppCompatActivity {
 //                    Toast.makeText(LoginActivity.this, "Fill out the fields in the form!!", Toast.LENGTH_SHORT).show();
 //                } else if(!(email.isEmpty() && password.isEmpty() )) {
 //                    //here we will write the logic of ours for storing the informstion which the user has providede
-//                    mFirebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
-//                        @Override
-//                        public void onComplete(@NonNull Task<AuthResult> task) {
-//                            if(!task.isSuccessful()){
-//                                Toast.makeText(LoginActivity.this, "Plesse login!!", Toast.LENGTH_SHORT).show();
-//                            } else {
-//                                Toast.makeText(LoginActivity.this, "Welcome User", Toast.LENGTH_SHORT).show();
-//                                Intent loginIntent = new Intent(LoginActivity.this, MainActivity.class);
-//                                startActivity(loginIntent);
-//                            }
-//                        }
-//                    });
-//
-//                } else {
-//                    //this is fo when any unexpected error comes
-//                    Toast.makeText(LoginActivity.this, "Some Error Occurred!!", Toast.LENGTH_SHORT).show();
-//                }
-//
-//            }
-//        });
+
+            }
+        });
+
+    }
+
+    //method for logging inn
+    private void loginUser(String loginEmail, String loginPassword) {
+        mFirebaseAuth.signInWithEmailAndPassword(loginEmail,loginPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(!task.isSuccessful()){
+                    String errormessage = task.getException().getMessage();
+                    Log.i("LOGIN",""+errormessage);
+                    Toast.makeText(LoginActivity.this, "Plesse login again !!", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(LoginActivity.this, "Logged in sucessfully !!Welcome User", Toast.LENGTH_SHORT).show();
+                    Intent loginIntent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(loginIntent);
+                }
+            }
+        });
     }
 }

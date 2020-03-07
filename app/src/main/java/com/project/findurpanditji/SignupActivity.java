@@ -128,28 +128,33 @@ public class SignupActivity extends AppCompatActivity {
                 //checking whether any field is empty or not
                     if (!email.equalsIgnoreCase("")) {
                             if (!password.equalsIgnoreCase("")) {
+                                //for comparing the password and the confirm passwords
+                                if(password.equalsIgnoreCase(confirmPassword)) {
                         //this aproach worksss fineeee
-                                mFirebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                                    @Override
-                                    public void onComplete(@NonNull Task<AuthResult> task) {
-                                        if(task.isSuccessful()) {
-                                            Toast.makeText(SignupActivity.this, "User registered successfull", Toast.LENGTH_SHORT).show();
-                                        } else {
-                                            Log.e("error","registration failed " +task.getException().getMessage());
-                                            Toast.makeText(SignupActivity.this, "not registereddd", Toast.LENGTH_SHORT).show();
+                                    mFirebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<AuthResult> task) {
+                                            if(task.isSuccessful()) {
+                                                Toast.makeText(SignupActivity.this, "User registered successfull", Toast.LENGTH_SHORT).show();
+                                            } else {
+                                                Log.e("error","registration failed " +task.getException().getMessage());
+                                                Toast.makeText(SignupActivity.this, "not registereddd", Toast.LENGTH_SHORT).show();
+                                            }
                                         }
-                                    }
-                                });
+                                    });
                                 //trying naother approach dkbvksdjvbdsjvbbsmdvmsdvsdmvsdmvdsv
 //                                registerUser(username,name,email,password);
-                            } else {
+                                } else{
+                                        Toast.makeText(SignupActivity.this, "The passwords doesn't match!!! ", Toast.LENGTH_SHORT).show();
+                                    }
+                            }else {
                                 Toasty.error(SignupActivity.this, "Please Enter Password", Toast.LENGTH_SHORT).show();
                                 Toast.makeText(SignupActivity.this, "pls enter password nd all thwat", Toast.LENGTH_SHORT).show();
                             }
-                    }else {
-                        Toasty.error(SignupActivity.this, "Please Enter Email", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(SignupActivity.this, "Please Enter Email", Toast.LENGTH_SHORT).show();
-                }
+                        }else {
+                            Toasty.error(SignupActivity.this, "Please Enter Email", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignupActivity.this, "Please Enter Email", Toast.LENGTH_SHORT).show();
+                    }
 
 //                if(name.isEmpty()) {
 //                    nameField.setError("Please enter your name");
