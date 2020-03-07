@@ -7,13 +7,21 @@ public class UserValuesClass {
     String confirmPassword;
     String email;
     String userOption;  //for checking whether the user is a pandit or a jajman
-    String userID;
+    String userID;  //for giving a unique id to every user
+    String date_of_birth; //for the date of birth of the user
+    String gender; //for the gender of user
+    String contactNo;
+    String address;
 
-    public UserValuesClass(String name, String username, String password, String confirmPassword, String email) {
+    public UserValuesClass() {
+//        this.name = name;
+    }
+
+    public UserValuesClass(String name, String username, String password, String email) {
         this.name = name;
         this.username = username;
         this.password = password;
-        this.confirmPassword = confirmPassword;
+//        this.confirmPassword = confirmPassword;
         this.email = email;
 //        this.userOption = userOption;
 //        this.userID = userID;
@@ -75,5 +83,35 @@ public class UserValuesClass {
         this.userID = userID;
     }
 
+    public String getDate_of_birth() {
+        return date_of_birth;
+    }
 
+    public void setDate_of_birth(String date_of_birth) {
+        this.date_of_birth = date_of_birth;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getContactNo() {
+        return contactNo;
+    }
+
+    public void setContactNo(String contactNo) {
+        this.contactNo = contactNo;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }

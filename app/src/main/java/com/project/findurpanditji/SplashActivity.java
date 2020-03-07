@@ -14,10 +14,13 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        loginBtn = findViewById(R.id.activity_splash_btn_login);
-        signupBtn = findViewById(R.id.activity_splash_btn_signup);
+//        loginBtn = findViewById(R.id.activity_splash_btn_login);
+//        signupBtn = findViewById(R.id.activity_splash_btn_signup);
 
 //        getActionBar().hide();  //for hiding the action bar from this activity
+        //write two handlers for the splash screen
+        //like one for going to the login screen(for the registered users) and
+        // another for the already logged in user which would directly go to the home page of our app
         //code for the splash screen
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
@@ -28,23 +31,23 @@ public class SplashActivity extends AppCompatActivity {
                 finish();  //for to avoiding to not go back in the spalsh activity from the login or any other  activity
 
             }
-        },900000000);
+        },1000);
 
         //handling the buttons for the login and signup
-        loginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent loginIntent = new Intent(SplashActivity.this,LoginActivity.class);
-                startActivity(loginIntent);
-            }
-        });
-
-        signupBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent signupIntent = new Intent(SplashActivity.this,SignupActivity.class);
-                startActivity(signupIntent);
-            }
-        });
+//        loginBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent loginIntent = new Intent(SplashActivity.this,LoginActivity.class);
+//                startActivity(loginIntent);
+//            }
+//        });
+//
+//        signupBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent signupIntent = new Intent(SplashActivity.this,SignupActivity.class);
+//                startActivity(signupIntent);
+//            }
+//        });
     }
 }

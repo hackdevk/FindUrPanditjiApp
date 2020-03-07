@@ -59,43 +59,43 @@
                 android:id="@+id/activity_signup_rb_pandit" />
         </RadioGroup>
 
-        <!--    for the name field-->
-        <TextView
-            android:id="@+id/activity_signup_tv_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Enter your name:"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="@id/activity_signup_rg_category"
-            app:layout_constraintTop_toBottomOf="@id/activity_signup_rg_category" />
+<!--        &lt;!&ndash;    for the name field&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/activity_signup_tv_name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:text="Enter your name:"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintLeft_toLeftOf="@id/activity_signup_rg_category"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/activity_signup_rg_category" />-->
 
-        <EditText
-            android:id="@+id/activity_signup_et_name"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_name" />
+<!--        <EditText-->
+<!--            android:id="@+id/activity_signup_et_name"-->
+<!--            android:layout_width="230dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_name" />-->
 
-        <!--    for the usernmae field-->
-        <TextView
-            android:id="@+id/activity_signup_tv_username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Username:"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/activity_signup_et_name" />
+<!--        &lt;!&ndash;    for the usernmae field&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/activity_signup_tv_username"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:text="Username:"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/activity_signup_et_name" />-->
 
-        <EditText
-            android:id="@+id/activity_signup_et_username"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_username"  />
+<!--        <EditText-->
+<!--            android:id="@+id/activity_signup_et_username"-->
+<!--            android:layout_width="230dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_username"  />-->
 
 <!--        for the email field-->
         <TextView
@@ -108,13 +108,12 @@
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/activity_signup_et_username" />
+            app:layout_constraintTop_toBottomOf="@id/activity_signup_rg_category" />
 
         <EditText
             android:id="@+id/activity_signup_et_email"
             android:layout_width="230dp"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/activity_signup_tv_email" />
         <!--        for the password field-->

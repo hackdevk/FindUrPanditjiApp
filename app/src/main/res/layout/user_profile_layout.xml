@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:background="@color/profileBackgroundColor"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@drawable/pandit_profile_image"
+
         app:srcCompat="@mipmap/ic_launcher_round"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
