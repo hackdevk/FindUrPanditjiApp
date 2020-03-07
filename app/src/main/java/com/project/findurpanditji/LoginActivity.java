@@ -30,7 +30,7 @@ import es.dmoral.toasty.Toasty;
 public class LoginActivity extends AppCompatActivity {
     EditText emailField ;
     EditText passwordField;
-    TextView signupText;
+    TextView signupText,forgotPswd;
     Button loginBtn;
     FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
@@ -63,17 +63,29 @@ public class LoginActivity extends AppCompatActivity {
             }
         };
 
-        //making the text clickable
-        SpannableString spannableString = new SpannableString("Don't have an account yet!! Signup");
+        //for making the signup  text clickable
+        SpannableString signupSpannableString = new SpannableString("Don't have an account yet!! Signup");
         ClickableSpan clickableSpan = new ClickableSpan() {
             @Override
             public void onClick(@NonNull View widget) {
                 startActivity(new Intent(LoginActivity.this,SignupActivity.class));
             }
         };
-        spannableString.setSpan(clickableSpan,28,34, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        signupText.setText( spannableString);
+        signupSpannableString.setSpan(clickableSpan,28,34, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        signupText.setText( signupSpannableString);
         signupText.setMovementMethod(LinkMovementMethod.getInstance());
+
+        //for making the forgot pswd text clickable
+        SpannableString forgotSpannableString = new SpannableString("Forgot your password!!");
+        ClickableSpan forgotClickableSpan = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget) {
+                startActivity(new Intent(LoginActivity.this,ForgotPasswordActivity.class));
+            }
+        };
+        forgotSpannableString.setSpan(clickableSpan,0,forgotSpannableString.length()-1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        forgotPswd.setText( forgotSpannableString);
+        forgotPswd.setMovementMethod(LinkMovementMethod.getInstance());
 
 
         //temporary code for logging in

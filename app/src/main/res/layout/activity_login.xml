@@ -105,6 +105,14 @@
             app:layout_constraintLeft_toLeftOf="@id/activity_login_btn_loginBtn"
             app:layout_constraintTop_toBottomOf="@id/activity_login_btn_loginBtn" />
 
+        <TextView
+            android:id="@+id/activity_login_tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_login_tv_signup_link" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

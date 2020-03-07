@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class FillUserProfileActivity extends AppCompatActivity {
 
-    EditText address,contactNo;
+    EditText address,contactNo,name;
     Button submit;
     RadioButton male,female;
 
@@ -21,10 +21,12 @@ public class FillUserProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fill_user_profile);
 
+
         male = findViewById(R.id.activity_fill_user_profile_rb_male);
         female = findViewById(R.id.activity_fill_user_profile_rb_female);
         address = findViewById(R.id.activity_fill_user_profile_et_address);
         contactNo = findViewById(R.id.activity_fill_user_profile_et_contact_no);
+        name = findViewById(R.id.activity_fill_user_profile_et_name);
         submit = findViewById(R.id.activity_fill_user_profile_btn_submit);
 
         submit.setOnClickListener(new View.OnClickListener() {

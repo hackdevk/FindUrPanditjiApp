@@ -29,8 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Enter your name:"
-        android:textSize="14sp"
-        android:textStyle="bold"
+        android:textColor="@color/blackColor"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/activity_fill_user_profile_iv_profile" />
 

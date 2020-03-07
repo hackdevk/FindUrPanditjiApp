@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="7dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="17dp">
+
+        <TextView
+            android:id="@+id/activity_forgot_pswd_tv_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Forgot Password"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/blackColor"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--    for entering the old password field-->
+        <TextView
+            android:id="@+id/activity_forgot_pswd_tv_pswd_old"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Enter your old password:"
+            android:textSize="14sp"
+            android:textColor="@color/blackColor"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_forgot_pswd_tv_label" />
+
+        <EditText
+            android:id="@+id/activity_forgot_pswd_et_pswd_old"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_forgot_pswd_tv_pswd_old" />
+
+        <!--    for the new password field-->
+        <TextView
+            android:id="@+id/activity_forgot_pswd_tv_pswd_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Enter a new password:"
+            android:textSize="14sp"
+            android:textColor="@color/blackColor"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_forgot_pswd_et_pswd_old" />
+
+        <EditText
+            android:id="@+id/activity_forgot_pswd_et_pswd_new"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_forgot_pswd_tv_pswd_new" />
+
+        <!--    for the confirm password field-->
+        <TextView
+            android:id="@+id/activity_forgot_pswd_tv_cnfrm_pswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Confirm your password:"
+            android:textColor="@color/blackColor"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_forgot_pswd_et_pswd_new" />
+
+        <EditText
+            android:id="@+id/activity_forgot_pswd_et_cnfrm_pswd"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_forgot_pswd_tv_cnfrm_pswd" />
+
+<!--        &lt;!&ndash;    for the password field&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/activity_login_tv_password"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:text="Password:"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/activity_login_et_email" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/activity_login_et_password"-->
+<!--            android:layout_width="230dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/activity_login_tv_password" />-->
+
+        <Button
+            android:id="@+id/activity_forgot_pswd_btn_reset"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Reset"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_forgot_pswd_et_cnfrm_pswd" />
+        <!--    the text view in which we will set the clickable text-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
